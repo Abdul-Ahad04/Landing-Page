@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Landing Page</title>
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="">
+                <img src="/images/logo.png" class="logo">
+            </a>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Menu</a>
+                </li>
+                <li>
+                    <a href="#">What's New</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#section2">Any Queries</a>
+                </li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <button onclick="topFunction()" id="myBtn" title="Click to go to the top">Top</button>
+            <div class="textBox">
+                <h2>It's not just a coffee <br> It's <span id="output">Starbucks</span></h2>
+                <p>Make Every Sip More Rewarding <br> Join Starbucks Rewards To Earn 
+                    Gold Level Benefits Like Free Drinks And Food, Get Free Refills, Pay 
+                    And Order With Your Name And More!</p>
+                    <a href="#" id="learnmore">Learn More</a>
+            </div>
+
+            <div class="imgBox">
+                <img src="/images/frappuccino-drink-chocolate-starbucks.png" alt="" class="starbucks">
+            </div>
+        </div>
+
+        <ul class="thumbnails">
+            <li>
+                <img id="changeGreen" src="/images/thumb1.png" onclick="imageSlider('/images/frappuccino-drink-chocolate-starbucks.png');
+                changeCircleColor('#017143') 
+                changeSpanColor('#017143')">
+            </li>
+            <li>
+                <img id="changePink1" src="/images/thumb2.png" onclick="imageSlider('/images/tea-coffee-drink-starbucks-latte.png');
+                changeCircleColor('#eb7495') 
+                changeSpanColor('#eb7495')">
+            </li>
+            <li>
+                <img id="changePink2" src="/images/thumb3.png" onclick="imageSlider('/images/frappuccino-drink-latte-starbucks-unicorn.png');
+                changeCircleColor('#d752b1') 
+                changeSpanColor('#d752b1')">
+            </li>
+        </ul>
+
+        <ul class="social" id="social">
+            <li>
+                <a href="https://www.facebook.com/starbucksindia/" target="_blank">
+                    <img src="/images/facebook.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/StarbucksIndia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                    <img src="/images/twitter.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/starbucksindia/?hl=en" target="_blank">
+                    <img src="/images/instagram.png">
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <div class="section2" id="section2">
+        <h2 class="section2heading" id="heading2">Any Queries....</h2>
+        <br>
+        <div class="container">
+            <input type="text" name="myhoneypot" class="myclass">
+            <form id="my-form" action="" method="post">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your Name..." required>
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="Lastname" placeholder="Your Last Name..." required>
+
+                <label for="emailadsress">E-Mail</label>
+                <input type="email" id="email" name="email" pattern="[^@]*@[^@]*" required placeholder="Your Email Address...">
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject"
+                placeholder="Write Something..." style="height: 200px;" required></textarea>
+
+                <input type="submit" value="Submit" id="my-form-button">
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Starbucks &copy 2023 - Not To Be Copied</p>
+    </div>
+    <script src="index.js"></script>
+
+</body>
+</html>
+
+
+
+
+
